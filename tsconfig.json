@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Versão do JavaScript que será gerada na saída */
+    "target": "ES2020", 
+
+    /* Sistema de módulos usado na geração dos arquivos .js (CommonJS usa `require` e `module.exports`, comum em Node.js) */
+    "module": "commonjs", 
+
+    /* Pasta raiz onde estão os seus arquivos TypeScript (.ts) */
+    "rootDir": "src", 
+
+    /* Pasta para onde os arquivos JavaScript compilados (.js) vão após a execução do `tsc` */
+    "outDir": "dist", 
+
+    /* Ativa verificações estritas de tipo (como proibir tipos 'any' implícitos e checagem rigida de 'null/undefined') */
+    "strict": true, 
+
+    /* Permite importar módulos CommonJS usando a sintaxe moderna do ES6 (`import express from 'express'`) sem erros */
+    "esModuleInterop": true, 
+
+    /* Pula a verificação de tipos dentro das bibliotecas instaladas em node_modules (deixa a compilação bem mais rápida) */
+    "skipLibCheck": true, 
+
+    /* Garante que maiúsculas e minúsculas nos caminhos de 'import' sejam respeitadas, evitando bugs em sistemas como Linux */
+    "forceConsistentCasingInFileNames": true, 
+
+    /* Permite importar arquivos .json diretamente no seu código TypeScript (`import data from './data.json'`) */
+    "resolveJsonModule": true
+  },
+
+  /* Diz ao TypeScript para compilar APENAS os arquivos que estão na pasta 'src' (ignora node_modules, testes externos, etc) */
+  "include": ["src"]
+}

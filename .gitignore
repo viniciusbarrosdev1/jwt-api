@@ -1,0 +1,17 @@
+node_modules
+.env
+logs-projeto.md
+dist
+/src/generated/prisma
+
+# banco de dados local (SQLite) - regenerado pelas migrations
+dev.db
+dev.db-journal
+dev.db-wal
+dev.db-shm
+
+# docs de referência do Prisma para agentes de IA - regeneradas por `npx prisma init`
+.agents/
+.claude/skills/
+.windsurf/
+skills-lock.json
